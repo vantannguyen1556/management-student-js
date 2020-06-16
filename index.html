@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <section class="section-test">
-    <ul class="list-products">
-      <li class="item">
-        <img src="https://baokhanhhoa.vn/dataimages/201909/original/images5377069_hoa.jpg" class="item-img"/>
-        <p class="price">1000000</p>
-        <button onclick="addToCart(this)">Add</button>
-      </li>
-      <li class="item">
-        <img src="https://i.a4vn.com/2020/4/5/bao-chau-a-lo-cho-the-he-vang-cua-bong-da-viet-nam-f81-4819992.jpg" class="item-img"/>
-        <p class="price">2000000</p>
-        <button onclick="addToCart(this)">Add</button>
-      </li>
-    </ul>
-  </section>
+  <main class="page-main container">
+    <section class="section-input-student">
+      <h2 class="title">Nhập thông tin học sinh</h2>
+      <form class="page-form">
+        <div class="form-group">
+          <label class="form-label">Họ tên</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tuổi</label>
+          <input type="text" class="form-control" id="inputAge">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Địa chỉ</label>
+          <input type="text" class="form-control" id="inputAddress">
+        </div>
+        <button type="button" class="btn btn-primary" id="js-register">Đăng ký</button>
+      </form>
+    </section>
+    <section class="list-student">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody id="js-students">
+        </tbody>
+      </table>
+    </section>
+  </main>
   <script src="handle.js"></script>
 </body>
+
 </html>
