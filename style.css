@@ -49,6 +49,12 @@
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+  font-weight: bold;
+}
+.btn-remove {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 .table .thead-dark th {
   color: #fff;
@@ -69,7 +75,9 @@ tr {
   border-collapse: collapse;
   width: 100%;
 }
-.section-input-student,
+.section-input-student {
+  width: 40%;
+}
 .list-student {
-  width: 45%;
+  width: 55%;
 }
